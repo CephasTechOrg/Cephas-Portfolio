@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cephas Osei-Bonsu | Visionary Software Engineer & AI Innovator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script defer src="../js/app.js"></script>
+</head>
+
+<body class="darkmode">
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a href="#home" class="logo">Cephas</a>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#honors">Honors</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#honors">Honors</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="mobileThemeToggle">
+            <i class="fas fa-moon"></i> Toggle Theme
+        </button>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="floating-tech" id="floatingTech">
+            <!-- Floating tech elements will be added dynamically -->
+        </div>
+
+        <!-- Cube Animation - FIXED FOR MOBILE -->
+        <div class="hero-visual">
+            <div class="cube-container">
+                <div class="cube-face front"><i class="fas fa-laptop-code"></i></div>
+                <div class="cube-face back"><i class="fas fa-microchip"></i></div>
+                <div class="cube-face right"><i class="fas fa-server"></i></div>
+                <div class="cube-face left"><i class="fas fa-brain"></i></div>
+                <div class="cube-face top"><i class="fas fa-bolt"></i></div>
+                <div class="cube-face bottom"><i class="fas fa-cloud"></i></div>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <h1 id="heroName">Cephas Osei-Bonsu</h1>
+            <div class="role-title" id="roleTitle">
+                <span>Software Engineer</span>
+            </div>
+            <p id="heroDescription">Designing intelligent systems that connect innovation, precision, and humanity.</p>
+            <!-- <a href="#projects" class="cta-button">Explore My Work</a> -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="section-title" data-aos="fade-up">
+            <h2 id="aboutTitle">About Me</h2>
+            <p id="aboutSubtitle">Get to know more about my journey and expertise</p>
+        </div>
+        <div class="about-content">
+            <div class="about-image" data-aos="fade-right">
+                <div class="profile-3d-container">
+                    <div class="profile-glow"></div>
+                    <img src="../asset/images/profile.jpg" alt="Cephas Osei-Bonsu" class="profile-img">
+                </div>
+                <div class="tech-orbits">
+                    <div class="orbit orbit-1">
+                        <div class="orbiting-tech" style="top: 0; left: 50%;"><i class="fab fa-python"></i></div>
+                        <div class="orbiting-tech" style="top: 100%; left: 50%;"><i class="fab fa-js"></i></div>
+                        <div class="orbiting-tech" style="top: 50%; left: 0%;"><i class="fab fa-react"></i></div>
+                        <div class="orbiting-tech" style="top: 50%; left: 100%;"><i class="fab fa-node-js"></i></div>
+                    </div>
+                    <div class="orbit orbit-2">
+                        <div class="orbiting-tech" style="top: 0; left: 50%;"><i class="fas fa-database"></i></div>
+                        <div class="orbiting-tech" style="top: 100%; left: 50%;"><i class="fab fa-aws"></i></div>
+                        <div class="orbiting-tech" style="top: 50%; left: 0%;"><i class="fas fa-cloud"></i></div>
+                        <div class="orbiting-tech" style="top: 50%; left: 100%;"><i class="fas fa-robot"></i></div>
+                    </div>
+                    <div class="orbit orbit-3">
+                        <div class="orbiting-tech" style="top: 0; left: 50%;"><i class="fas fa-mobile-alt"></i></div>
+                        <div class="orbiting-tech" style="top: 100%; left: 50%;"><i class="fas fa-code"></i></div>
+                        <div class="orbiting-tech" style="top: 50%; left: 0%;"><i class="fas fa-brain"></i></div>
+                        <div class="orbiting-tech" style="top: 50%; left: 100%;"><i class="fas fa-server"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-text" data-aos="fade-left">
+                <h3 id="aboutHeading">Innovating at the Intersection of Technology and Humanity</h3>
+                <p id="aboutDescription1">I’m a passionate Software Engineer and AI Researcher dedicated to building
+                    intelligent, human-centered systems that address real-world challenges. With expertise in full-stack
+                    development, machine learning, and IoT, I design solutions that are both technologically advanced
+                    and deeply impactful.
+
+                    My core interest lies in creating software that improves lives, strengthens communities, and drives
+                    innovation forward. I’m particularly inspired by the intersection of technology and environmental
+                    sustainability—leveraging AI to tackle global issues such as climate change, resource scarcity, and
+                    biodiversity loss. From analyzing sensor data to monitor pollution, to developing tools that promote
+                    efficient resource management, I aim to contribute to sustainable innovations that protect both
+                    people and the planet.
+
+                </p>
+                <p id="aboutDescription2">Ultimately, my vision is to engineer practical, scalable solutions—across
+                    health, security, and
+                    sustainability that blend AI, data, and engineering to generate measurable impact. I’m driven not
+                    only to solve technical problems, but also to address the human challenges that define them.</p>
+
+                <div class="info-cards">
+                    <div class="info-card" data-aos="zoom-in" data-aos-delay="100">
+                        <i class="fas fa-briefcase"></i>
+                        <h4>Software Engineer</h4>
+                        <p>Building scalable solutions</p>
+                    </div>
+                    <div class="info-card" data-aos="zoom-in" data-aos-delay="200">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Accra, Ghana</h4>
+                        <p>Based in West Africa</p>
+                    </div>
+                    <div class="info-card github-card" data-aos="zoom-in" data-aos-delay="300" id="githubCard">
+                        <i class="fab fa-github"></i>
+                        <h4>5+ Years Experience</h4>
+                        <p>View my GitHub profile</p>
+                    </div>
+                    <div class="info-card" data-aos="zoom-in" data-aos-delay="400">
+                        <i class="fas fa-envelope"></i>
+                        <h4>cephas@example.com</h4>
+                        <p>Let's connect</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="section-title" data-aos="fade-up">
+            <h2 id="skillsTitle">My Skills</h2>
+            <p id="skillsSubtitle">Technical expertise across multiple domains</p>
+        </div>
+        <div class="skills-container">
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                <h3><i class="fas fa-code"></i> Frontend Development</h3>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">HTML/CSS</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">React</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                <h3><i class="fas fa-server"></i> Backend Development</h3>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-percentage">92%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="92"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Node.js</span>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="88"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">FastAPI</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                <h3><i class="fas fa-brain"></i> AI & Data Science</h3>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Machine Learning</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">TensorFlow/PyTorch</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Data Analysis</span>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="88"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New skill categories added (no duplicates) -->
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                <h3><i class="fas fa-database"></i> Databases & Cloud</h3>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">PostgreSQL</span>
+                        <span class="skill-percentage">82%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="82"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Firebase Hosting & Authentication</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Git & GitHub</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="500">
+                <h3><i class="fas fa-microchip"></i> Hardware & Embedded Systems</h3>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Arduino</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Embedded Systems</span>
+                        <span class="skill-percentage">84%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="84"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">C++</span>
+                        <span class="skill-percentage">78%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="78"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="600">
+                <h3><i class="fas fa-paint-brush"></i> Creative & Productivity Tools</h3>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">PowerPoint</span>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="88"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Publisher</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Video Editing</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Photoshop</span>
+                        <span class="skill-percentage">78%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="78"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="section-title" data-aos="fade-up">
+            <h2 id="projectsTitle">My Projects</h2>
+            <p id="projectsSubtitle">Showcasing my recent work and innovations</p>
+        </div>
+        <div class="project-filters" data-aos="fade-up" data-aos-delay="100">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ai">AI/ML</button>
+            <button class="filter-btn" data-filter="web">Web Apps</button>
+            <button class="filter-btn" data-filter="iot">IoT</button>
+            <button class="filter-btn" data-filter="health">Health Tech</button>
+        </div>
+        <div class="projects-grid">
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-category="health" data-project="1">
+                <div class="project-image">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Vital-Go Health Monitoring System</h3>
+                    <p>A real-time health monitoring platform with AI that analyzes patient vitals, detects health
+                        risks, and enables secure doctor-patient video consultations.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">AI</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/cephas/vitalgo" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="https://vitalgo.demo.com" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-category="ai" data-project="2">
+                <div class="project-image">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <div class="project-content">
+                    <h3>PedraX - AI PDF Analyzer</h3>
+                    <p>A web application that extracts content from uploaded PDFs, sends it to an AI API for
+                        summarization, and returns the summarized version in a new PDF format.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">AI</span>
+                        <span class="tech-tag">PDF.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/cephas/pedrax-ai-pdf-analyzer" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="https://pedrax.demo.com" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-category="web" data-project="3">
+                <div class="project-image">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="project-content">
+                    <h3>ShopEase — E-Commerce Platform</h3>
+                    <p>A responsive online shopping platform where users can browse and purchase electronics, phones,
+                        home appliances, and more — with secure Paystack payment integration and user authentication.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Paystack</span>
+                        <span class="tech-tag">Authentication</span>
+                        <span class="tech-tag">Database</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-category="web" data-project="4">
+                <div class="project-image">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="project-content">
+                    <h3>WorldPath Foundation — Website</h3>
+                    <p>A clean, responsive website built for WorldPath Foundation to present their education, travel,
+                        and care services. Built with semantic HTML, modern CSS, and vanilla JavaScript to showcase
+                        programs, intake processes, and donation/support options.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Responsive</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-category="web" data-project="5">
+                <div class="project-image">
+                    <i class="fas fa-music"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Adventist Hymnal App</h3>
+                    <p>A mobile hymnbook application featuring Adventist hymns, lyrics, and audio playback. Built with
+                        web technologies and wrapped with Capacitor to generate an APK for offline use.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Capacitor</span>
+                        <span class="tech-tag">JSON</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-category="web" data-project="6">
+                <div class="project-image">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Learning Platform</h3>
+                    <p>An interactive tech-learning platform that curates over 300 top-rated YouTube tutorials on web
+                        development, AI, GitHub, and more — all accessible from a single portal with Firebase
+                        authentication support.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">JSON</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">YouTube API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-category="hardware" data-project="7">
+                <div class="project-image">
+                    <i class="fas fa-hand-holding-water"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Automatic Water Dispenser</h3>
+                    <p>An automated, touchless water dispenser built during the COVID-19 pandemic to promote safe
+                        handwashing and reduce virus transmission in schools.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">Sensors</span>
+                        <span class="tech-tag">Embedded Systems</span>
+                        <span class="tech-tag">Hardware</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://vimeo.com/994299968?fl=pl&fe=sh" class="project-link">
+                            <i class="fas fa-play-circle"></i> Watch Video
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-category="iot" data-project="8">
+                <div class="project-image">
+                    <i class="fas fa-fire-extinguisher"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Smart Smoke Detector</h3>
+                    <p>A GSM-enabled smoke detection system designed to prevent fire outbreaks by sending instant SMS
+                        alerts when smoke is detected, ensuring faster emergency response and community safety.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">Smoke Sensor</span>
+                        <span class="tech-tag">GSM Module</span>
+                        <span class="tech-tag">LCD Display</span>
+                        <span class="tech-tag">Embedded Systems</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-category="iot" data-project="9">
+                <div class="project-image">
+                    <i class="fas fa-door-closed"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Smart Door System</h3>
+                    <p>A secure, RFID-based door system that uses Arduino and servo control to automate access.
+                        Unauthorized attempts trigger an audible alarm for enhanced security.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">RFID</span>
+                        <span class="tech-tag">Servo Motor</span>
+                        <span class="tech-tag">Buzzer</span>
+                        <span class="tech-tag">Embedded Systems</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalProjectTitle">Project Title</h3>
+                <button class="close-modal" id="closeProjectModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image" id="modalProjectImage">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="modal-details">
+                    <div class="modal-description">
+                        <h4>Project Description</h4>
+                        <p id="modalProjectDescription">Project description will appear here.</p>
+
+                        <h4>Key Features</h4>
+                        <ul id="modalProjectFeatures">
+                            <!-- Features will be added dynamically -->
+                        </ul>
+                    </div>
+                    <div class="modal-info">
+                        <h4>Project Details</h4>
+                        <div class="modal-tech" id="modalProjectTech">
+                            <!-- Tech tags will be added dynamically -->
+                        </div>
+
+                        <div class="modal-links">
+                            <a href="#" class="modal-link" id="modalGithubLink">
+                                <i class="fab fa-github"></i> View Code on GitHub
+                            </a>
+                            <a href="#" class="modal-link" id="modalLiveLink">
+                                <i class="fas fa-external-link-alt"></i> View Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Honors Section -->
+    <section class="honors" id="honors">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="section-title" data-aos="fade-up">
+            <h2 id="honorsTitle">Honors & Certificates</h2>
+            <p id="honorsSubtitle">Recognition for excellence and innovation</p>
+        </div>
+        <div class="honors-grid">
+
+            <div class="honor-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="honor-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3>American Maths Olympiad</h3>
+                <p>Achieved top honors in the American Mathematics Olympiad, demonstrating exceptional problem-solving
+                    skills.</p>
+                <div class="honor-date">
+                    <i class="far fa-calendar"></i> May 2020
+                </div>
+                <a class="honor-btn" data-certificate="math-olympiad">
+                    View Certificate <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="honor-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="honor-icon">
+                    <i class="fas fa-medal"></i>
+                </div>
+                <h3>MIT Solve Innovator</h3>
+                <p>Recognized by MIT Solve for providing innovative and impactful solutions using NASA's open data to
+                    address global challenges through technology and AI-driven problem-solving.</p>
+                <div class="honor-date">
+                    <i class="far fa-calendar"></i> October 2024
+                </div>
+                <a class="honor-btn" data-certificate="nasa-innovator">
+                    View Certificate <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="honor-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="honor-icon">
+                    <i class="fas fa-medal"></i>
+                </div>
+                <h3>MIT Technology Review Innovator</h3>
+                <p>Featured in MIT Technology Review's "35 Innovators Under 35" for contributions to AI in healthcare
+                    diagnostics. In recognition of providing innovative and impactful solutions using NASA's open data.
+                </p>
+                <div class="honor-date">
+                    <i class="far fa-calendar"></i> October 2024
+                </div>
+                <a class="honor-btn" data-certificate="mit-innovator">
+                    View Certificate <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="honor-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="honor-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3>Development and Advanced Engineering</h3>
+                <p>Course completion and job-simulation recognition in Object-Oriented Programming (OOP), Continuous
+                    Integration (CI), and Agile planning methodologies.</p>
+                <div class="honor-date">
+                    <i class="far fa-calendar"></i> August 2024
+                </div>
+                <a class="honor-btn" data-certificate="accenture">
+                    View Certificate <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Add this section after Honors section -->
+    <section class="leadership" id="leadership">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="section-title" data-aos="fade-up">
+            <h2>Technical Leadership</h2>
+            <p>Mentoring teams and driving technical excellence</p>
+        </div>
+
+        <div class="leadership-grid">
+            <div class="leadership-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="leadership-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Team Mentoring</h3>
+                <p>Mentored 15+ junior developers, improving team velocity by 40% through code reviews and pair
+                    programming</p>
+                <div class="metrics">
+                    <span class="metric">15+ Developers</span>
+                    <span class="metric">40% Improvement</span>
+                </div>
+                <div class="leadership-skills">
+                    <span class="skill-tag">Code Reviews</span>
+                    <span class="skill-tag">Pair Programming</span>
+                    <span class="skill-tag">Technical Onboarding</span>
+                </div>
+            </div>
+
+            <div class="leadership-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="leadership-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Architecture Design</h3>
+                <p>Designed scalable systems handling 1M+ daily requests with 99.9% uptime and sub-100ms response times
+                </p>
+                <div class="metrics">
+                    <span class="metric">1M+ Requests</span>
+                    <span class="metric">99.9% Uptime</span>
+                </div>
+                <div class="leadership-skills">
+                    <span class="skill-tag">System Design</span>
+                    <span class="skill-tag">Microservices</span>
+                    <span class="skill-tag">Cloud Architecture</span>
+                </div>
+            </div>
+
+            <div class="leadership-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="leadership-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3>Performance Optimization</h3>
+                <p>Reduced application load times by 60% and improved Core Web Vitals scores across multiple projects
+                </p>
+                <div class="metrics">
+                    <span class="metric">60% Faster</span>
+                    <span class="metric">95+ Scores</span>
+                </div>
+                <div class="leadership-skills">
+                    <span class="skill-tag">Performance</span>
+                    <span class="skill-tag">Optimization</span>
+                    <span class="skill-tag">Web Vitals</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modal -->
+    <div class="modal certificate-modal" id="certificateModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalCertificateTitle">Certificate</h3>
+                <button class="close-modal" id="closeCertificateModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="" alt="Certificate" class="certificate-image" id="certificateImage">
+                <div class="certificate-details">
+                    <h3 id="certificateName">Certificate Name</h3>
+                    <p id="certificateDescription">Certificate description will appear here.</p>
+                    <p id="certificateDate"><strong>Issued:</strong> Date</p>
+                    <p id="certificateIssuer"><strong>Issued by:</strong> Organization</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive Code Playground Section -->
+    <section class="code-playground-section" id="code-playground">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+
+        <div class="section-title" data-aos="fade-up">
+            <h2>Interactive Code Playground</h2>
+            <p>Experiment with live code execution and see immediate results</p>
+        </div>
+
+        <div class="code-playground-container" data-aos="fade-up" data-aos-delay="100">
+            <div class="playground-header">
+                <div class="playground-title">
+                    <i class="fas fa-code"></i>
+                    <h3>JavaScript Playground</h3>
+                </div>
+                <div class="playground-controls">
+                    <select id="theme-select" class="theme-select">
+                        <option value="dark">Dark Theme</option>
+                        <option value="light">Light Theme</option>
+                    </select>
+                    <button id="run-code" class="run-btn">
+                        <i class="fas fa-play"></i> Run Code
+                    </button>
+                    <button id="reset-code" class="reset-btn">
+                        <i class="fas fa-redo"></i> Reset
+                    </button>
+                </div>
+            </div>
+
+            <div class="playground-content">
+                <!-- Code Editor Area -->
+                <div class="editor-panel">
+                    <div class="panel-header">
+                        <span>editor.js</span>
+                        <div class="editor-actions">
+                            <button id="format-code" class="format-btn" title="Format Code">
+                                <i class="fas fa-broom"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="code-editor-container">
+                        <textarea id="code-input" class="code-input" spellcheck="false"
+                            placeholder="// Write your JavaScript code here..."></textarea>
+                        <div id="syntax-highlighting" class="syntax-highlighting"></div>
+                    </div>
+                </div>
+
+                <!-- Console Output Area -->
+                <div class="console-panel">
+                    <div class="panel-header">
+                        <span>Console Output</span>
+                        <div class="console-actions">
+                            <button id="clear-console" class="clear-btn" title="Clear Console">
+                                <i class="fas fa-trash"></i> Clear
+                            </button>
+                        </div>
+                    </div>
+                    <div id="output-content" class="output-content">
+                        <div class="welcome-message">
+                            <div class="welcome-icon">🚀</div>
+                            <h4>Welcome to the Code Playground!</h4>
+                            <p>Write JavaScript code in the editor and click "Run Code" to see the output here.</p>
+                            <p>Try the examples below or write your own code!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Code Examples -->
+            <div class="examples-section">
+                <h4>Quick Examples:</h4>
+                <div class="example-buttons">
+                    <button class="example-btn" data-example="fibonacci">
+                        <i class="fas fa-calculator"></i> Fibonacci
+                    </button>
+                    <button class="example-btn" data-example="sorting">
+                        <i class="fas fa-sort"></i> Sorting
+                    </button>
+                    <button class="example-btn" data-example="promises">
+                        <i class="fas fa-bolt"></i> Async/Await
+                    </button>
+                    <button class="example-btn" data-example="classes">
+                        <i class="fas fa-cube"></i> Classes
+                    </button>
+                    <button class="example-btn" data-example="algorithms">
+                        <i class="fas fa-brain"></i> Algorithms
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="section-title" data-aos="fade-up">
+            <h2 id="testimonialsTitle">Testimonials</h2>
+            <p id="testimonialsSubtitle">What colleagues and clients say about working with me</p>
+        </div>
+        <div class="testimonials-container" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Cephas brought exceptional technical expertise and innovative thinking to
+                    our AI project. His ability to translate complex requirements into elegant solutions was impressive,
+                    and he consistently delivered beyond expectations."</p>
+                <div class="testimonial-author">
+                    <div class="author-img"
+                        style="background: linear-gradient(135deg, var(--primary), var(--secondary));"></div>
+                    <div class="author-info">
+                        <h4>Dr. Sarah Johnson</h4>
+                        <p>CTO, HealthTech Innovations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="section-title" data-aos="fade-up">
+            <h2 id="contactTitle">Let's Build Something Together</h2>
+            <p id="contactSubtitle">Get in touch to discuss potential collaborations</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right">
+                <h3 id="contactHeading">Get In Touch</h3>
+                <p id="contactDescription">I'm always open to discussing new projects, creative ideas, or opportunities
+                    to be part of your vision.</p>
+
+                <div class="contact-details">
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>cephasbonsuosei003@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Ghana</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+233 55156 0593</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-form" data-aos="fade-left">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading">
+                            <i class="fas fa-spinner fa-spin"></i> Sending...
+                        </span>
+                    </button>
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col footer-about">
+                <h3>About Me</h3>
+                <p>I'm a passionate Software Engineer and AI Researcher with a mission to build intelligent systems that
+                    solve real-world problems.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <div class="footer-links">
+                    <a href="#home"><i class="fas fa-chevron-right"></i> Home</a>
+                    <a href="#about"><i class="fas fa-chevron-right"></i> About</a>
+                    <a href="#skills"><i class="fas fa-chevron-right"></i> Skills</a>
+                    <a href="#projects"><i class="fas fa-chevron-right"></i> Projects</a>
+                    <a href="#honors"><i class="fas fa-chevron-right"></i> Honors</a>
+                    <a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Services</h3>
+                <div class="footer-links">
+                    <a href="#"><i class="fas fa-chevron-right"></i> Web Development</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> AI Solutions</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Mobile Apps</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> UI/UX Design</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Consulting</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <div class="footer-contact">
+                    <p><i class="fas fa-map-marker-alt"></i> Accra, Ghana</p>
+                    <p><i class="fas fa-envelope"></i> cephas@example.com</p>
+                    <p><i class="fas fa-phone"></i> +233 XX XXX XXXX</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">© 2023 Cephas Osei-Bonsu. All Rights Reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Assistant -->
+    <div class="ai-assistant">
+        <div class="ai-chat" id="aiChat">
+            <div class="ai-header">
+                <h3><i class="fas fa-robot"></i> Cephas AI Assistant</h3>
+                <button class="close-ai" id="closeAi">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="ai-messages" id="aiMessages">
+                <div class="ai-message bot">
+                    Hi! I'm Cephas's AI assistant. How can I help you today?
+                </div>
+            </div>
+            <div class="ai-input">
+                <input type="text" id="aiInput" placeholder="Ask me anything...">
+                <button class="ai-send" id="aiSend">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+        <button class="ai-toggle" id="aiToggle">
+            <i class="fas fa-robot"></i>
+        </button>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</body>
+
+</html>
