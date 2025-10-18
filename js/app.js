@@ -193,7 +193,7 @@ const projects = [
         live: "https://vitalgo.demo.com",
         mediaType: "image",
         icon: null,
-        image: "../asset/images/logo.png",
+        image: "/asset/images/logo.png",
         video: null,
     },
     {
@@ -213,7 +213,7 @@ const projects = [
         live: "https://pedrax.demo.com",
         mediaType: "image",
         icon: null,
-        image: "../asset/images/pderax.png",
+        image: "asset/images/pderax.png",
         video: null,
     },
     {
@@ -234,7 +234,7 @@ const projects = [
         live: null,
         mediaType: "image",
         icon: null,
-        image: "../asset/images/shopease.png",
+        image: "asset/images/shopease.png",
         video: null
     },
 
@@ -255,7 +255,7 @@ const projects = [
         live: null,
         mediaType: "image",
         icon: null,
-        image: "../asset/images/worldpath.png",
+        image: "asset/images/worldpath.png",
         video: null
     },
     {
@@ -275,7 +275,7 @@ const projects = [
         live: null,
         mediaType: "image",
         icon: null,
-        image: "../asset/images/hymnal.png",
+        image: "asset/images/hymnal.png",
         video: null
     },
     {
@@ -296,7 +296,7 @@ const projects = [
         live: null,
         mediaType: "image",
         icon: null,
-        image: "../asset/images/easylearn.png",
+        image: "asset/images/easylearn.png",
         video: null
     },
     {
@@ -464,7 +464,7 @@ const certificates = {
         description: 'Recognized by NASA for providing innovative and impactful solutions using NASA\'s open data to address global challenges through technology and AI-driven problem-solving.',
         date: 'October 2024',
         issuer: 'NASA',
-        image: '../asset/images/nasa.jpeg'
+        image: 'asset/images/nasa.jpeg'
     },
 
     'math-olympiad': {
@@ -472,7 +472,7 @@ const certificates = {
         description: 'Achieved top honors in the American Mathematics Olympiad, demonstrating exceptional problem-solving skills. Global Ranking: 10th, National Ranking: 3rd. Ranked 1st out of 1,700 students in high school and placed in the top 1% out of 30,000 participants globally.',
         date: 'November 2024',
         issuer: 'American Mathematical Society',
-        image: '../asset/images/american.jpeg'
+        image: 'asset/images/american.jpeg'
     },
 
     'mit-innovator': {
@@ -480,14 +480,14 @@ const certificates = {
         description: 'Featured in MIT Technology Review\'s "35 Innovators Under 35" for contributions to AI in healthcare diagnostics. In recognition of providing innovative and impactful solutions using NASA\'s open data.',
         date: 'October 2024',
         issuer: 'MIT Technology Review',
-        image: '../asset/images/mit.png'
+        image: 'asset/images/mit.png'
     },
     'accenture': {
         name: 'Development and Advanced Engineering',
         description: 'Course completion and job-simulation recognition in Object-Oriented Programming (OOP), Continuous Integration (CI), and Agile planning methodologies.',
         date: 'August 2024',
         issuer: 'Accenture',
-        image: '../asset/images/eng.jpeg'
+        image: 'asset/images/eng.jpeg'
     }
 
 
@@ -532,7 +532,7 @@ certificateModal.addEventListener('click', (e) => {
 // ===== GITHUB CARD =====
 const githubCard = document.getElementById('githubCard');
 githubCard.addEventListener('click', () => {
-    window.open('https://github.com/cephas-osei-bonsu', '_blank');
+    window.open('https://github.com/CephasTechOrg', '_blank');
 });
 
 // ===== SKILL BARS ANIMATION WITH INTERSECTION OBSERVER - FIXED FOR MOBILE =====
