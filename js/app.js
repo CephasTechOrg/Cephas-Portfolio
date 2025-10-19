@@ -72,19 +72,30 @@ function toggleTheme() {
     }
 }
 
-// Check for saved theme preference
+// Set dark mode as default theme
 const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'dark') {
+if (savedTheme === 'light') {
+    // Only apply light mode if explicitly saved as light
+    document.body.classList.remove('dark-mode');
+    themeIcon.classList.remove('fa-sun');
+    themeIcon.classList.add('fa-moon');
+    mobileThemeIcon.classList.remove('fa-sun');
+    mobileThemeIcon.classList.add('fa-moon');
+} else {
+    // Default to dark mode
     document.body.classList.add('dark-mode');
     themeIcon.classList.remove('fa-moon');
     themeIcon.classList.add('fa-sun');
     mobileThemeIcon.classList.remove('fa-moon');
     mobileThemeIcon.classList.add('fa-sun');
+    // Only set localStorage if not already set to avoid overriding explicit choices
+    if (!savedTheme) {
+        localStorage.setItem('theme', 'dark');
+    }
 }
 
 themeToggle.addEventListener('click', toggleTheme);
 mobileThemeToggle.addEventListener('click', toggleTheme);
-
 // ===== MOBILE NAVIGATION =====
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');
 const mobileNav = document.getElementById('mobileNav');
@@ -535,32 +546,60 @@ githubCard.addEventListener('click', () => {
     window.open('https://github.com/CephasTechOrg', '_blank');
 });
 
-// ===== SKILL BARS ANIMATION WITH INTERSECTION OBSERVER - FIXED FOR MOBILE =====
+// ===== SKILL BARS ANIMATION WITH IMPROVED MOBILE SUPPORT =====
 const skillBars = document.querySelectorAll('.skill-progress');
 let skillAnimationTriggered = false;
 
-// FIX: Lower threshold for mobile to ensure animation triggers
+// Improved Intersection Observer for mobile
 const skillsObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting && !skillAnimationTriggered) {
             skillAnimationTriggered = true;
-            skillBars.forEach(bar => {
-                const width = bar.getAttribute('data-width');
-                bar.style.width = `${width}%`;
-            });
-        } else if (!entry.isIntersecting && skillAnimationTriggered) {
-            skillAnimationTriggered = false;
-            skillBars.forEach(bar => {
-                bar.style.width = '0';
-            });
+
+            // Use setTimeout to ensure animation runs after DOM update
+            setTimeout(() => {
+                skillBars.forEach((bar, index) => {
+                    const width = bar.getAttribute('data-width');
+                    // Add delay for staggered animation
+                    setTimeout(() => {
+                        bar.style.width = `${width}%`;
+                        bar.style.opacity = '1';
+                    }, index * 150); // Stagger animation
+                });
+            }, 100);
         }
     });
-}, { threshold: 0.3 }); // Reduced threshold for better mobile detection
+}, {
+    threshold: 0.1, // Much lower threshold for mobile
+    rootMargin: '0px 0px -50px 0px' // Trigger when element is 50px from bottom
+});
 
 const skillsSection = document.getElementById('skills');
 if (skillsSection) {
     skillsObserver.observe(skillsSection);
 }
+
+// Fallback: If Intersection Observer fails, animate on load
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        if (!skillAnimationTriggered) {
+            const skillsElement = document.getElementById('skills');
+            if (skillsElement) {
+                const rect = skillsElement.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                    skillAnimationTriggered = true;
+                    skillBars.forEach((bar, index) => {
+                        const width = bar.getAttribute('data-width');
+                        setTimeout(() => {
+                            bar.style.width = `${width}%`;
+                            bar.style.opacity = '1';
+                        }, index * 150);
+                    });
+                }
+            }
+        }
+    }, 1000);
+});
 
 // ===== CONTACT FORM =====
 const contactForm = document.getElementById('contactForm');
