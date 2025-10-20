@@ -470,13 +470,6 @@ const honorButtons = document.querySelectorAll('.honor-btn');
 // Certificate data
 const certificates = {
 
-    'nasa-innovator': {
-        name: 'NASA SPACE APP CHALLENGE',
-        description: 'Recognized by NASA for providing innovative and impactful solutions using NASA\'s open data to address global challenges through technology and AI-driven problem-solving.',
-        date: 'October 2024',
-        issuer: 'NASA',
-        image: 'asset/images/nasa.jpeg'
-    },
 
     'math-olympiad': {
         name: 'American Maths Olympiad',
@@ -486,13 +479,23 @@ const certificates = {
         image: 'asset/images/american.jpeg'
     },
 
-    'mit-innovator': {
-        name: 'MIT Technology Review Innovator',
-        description: 'Featured in MIT Technology Review\'s "35 Innovators Under 35" for contributions to AI in healthcare diagnostics. In recognition of providing innovative and impactful solutions using NASA\'s open data.',
+
+    'nasa-innovator': {
+        name: 'NASA Space Apps Challenge – Galactic Problem Solver',
+        description: 'Recognized for outstanding participation and efforts to address challenges we face in space and on Earth, demonstrating innovative use of NASA’s open data and technology-driven solutions.',
         date: 'October 2024',
-        issuer: 'MIT Technology Review',
+        issuer: 'NASA Space Apps Challenge',
+        image: 'asset/images/nasa.jpeg'
+    },
+
+    'mit-innovator': {
+        name: 'MIT Solve – Innovator for Humanity',
+        description: 'Provided an innovative solution on how we can use technology to make life better — fighting starvation, uplifting communities, and improving productivity for a more sustainable future.',
+        date: 'October 2024',
+        issuer: 'MIT Solve',
         image: 'asset/images/mit.png'
     },
+
     'accenture': {
         name: 'Development and Advanced Engineering',
         description: 'Course completion and job-simulation recognition in Object-Oriented Programming (OOP), Continuous Integration (CI), and Agile planning methodologies.',
